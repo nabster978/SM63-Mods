@@ -325,7 +325,7 @@ Returns the player's current position (x-coordinate, y-coordinate)
 ## showhotkey
 Returns the current commands binded on the given hotkey
 
-**Aliases:** shk
+**Aliases:** shk, shtk
 
 **Arguments:** String:key
 
