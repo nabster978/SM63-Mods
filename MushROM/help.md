@@ -104,9 +104,11 @@ Resets the coins position on the next loading zone.
 **Aliases:** restartcoins
 
 ## timersplit
-Trigers a timer split.
-p
+Triggers a timer split.  Can be used to split on certain actions.   
+
 **Aliases:** timesplit, tsplit
+
+**Arguments:** OPTION[onShine/onStarcoin/onJump/onRedCoin/onSilverStar/onRocket]
 
 ## animation
 Sets the current character animation.
@@ -353,6 +355,11 @@ Changes the current fludd the player has equipped
 Enables or disables the cutscenes before and after True Bowser
 
 **Aliases:** cs, cutscenes
-
+p
 **Arguments:** wTOGGLE
+
+## resetdoors
+Resets all unlockable castle doors so the shine/key animation will play on their next opening (assuming the player has the prerequisite shines/starcoins/key)
+
+**Aliases:** resetdoor, rd
 
