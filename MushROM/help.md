@@ -363,3 +363,9 @@ Resets all unlockable castle doors so the shine/key animation will play on their
 
 **Aliases:** resetdoor, rd
 
+## lightningtransition
+Makes the next transition a lightningtransition(if possible)
+
+**Aliases:** lt
+
+
