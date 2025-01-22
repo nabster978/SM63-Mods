@@ -355,7 +355,7 @@ Changes the current fludd the player has equipped
 Enables or disables the cutscenes before and after True Bowser
 
 **Aliases:** cs, cutscenes
-p
+
 **Arguments:** wTOGGLE
 
 ## resetdoors
@@ -364,8 +364,8 @@ Resets all unlockable castle doors so the shine/key animation will play on their
 **Aliases:** resetdoor, rd
 
 ## lightningtransition
-Makes the next transition a lightningtransition(if possible)
+Makes the next transition a lightningtransition(if possible). Will be delayed if after_transition is true
 
 **Aliases:** lt
 
-
+**Arguments:** *BOOL:after_transition
