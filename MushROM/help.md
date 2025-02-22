@@ -106,9 +106,9 @@ Resets the coins position on the next loading zone.
 ## timersplit
 Triggers a timer split.  Can be used to split on certain actions.   
 
-**Aliases:** timesplit, tsplit
+**Aliases:** timesplit, tsplit, split
 
-**Arguments:** OPTION[onShine/onStarcoin/onJump/onRedCoin/onSilverStar/onRocket]
+**Arguments:** OPTION[onShine/onStarcoin/onJump/onDive/onRedCoin/onSilverStar/onRocket]
 
 ## animation
 Sets the current character animation.
@@ -282,7 +282,7 @@ Sets the saved nozzles in a specific world.
 **Arguments:** OPTION[bob/sl/hmc/bm/lll/ttm/rr/bt3/ssl/wdw/ttc/all], OPTION[h/r/t/all], wTOGGLE
 
 ## warp
-Warps the player to the specified room.
+Warps the player to the specified room.  If no arguments are given, the warp command will default to the position set by the warpposition command
 
 **Aliases:** w
 
@@ -369,3 +369,8 @@ Makes the next transition a lightningtransition(if possible). Will be delayed if
 **Aliases:** lt
 
 **Arguments:** *BOOL:after_transition
+
+## warpposition
+Sets a default warp position for the warp command to your current position
+
+**Aliases:** warpposition, warppos, wp
