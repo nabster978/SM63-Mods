@@ -25,9 +25,7 @@ Quits to the title screen.
 **Aliases:** quitgame
 
 ## timerreset
-Resets the timer and pauses until next transition.  If combined with a warp on a hotkey, having after_warp as true will always make the timer reset after the warp; otherwise it will always be before.
-
-**Arguments:** *BOOL:after_warp
+Resets the timer and pauses until next transition
 
 **Aliases:** timereset, treset, timerrestart, timerestart, trestart
 
@@ -45,6 +43,18 @@ Clear a given hotkey.
 
 **Arguments:** KEY
 
+## removecommand
+Remove a command from a hotkey based on index (starting at 0) or the command
+
+**Syntax:** removehotkey [key] [index/command]
+
+Examples:
+- /removecommand r 2
+- /removecommand f warp 8-10
+
+**Aliases:** clearcommand, rc, cc
+
+**Arguments:** KEY, OPTION[NUMBER/STRING]
 ## setposition
 Moves the player to the given position.
 
@@ -99,9 +109,11 @@ Switches to the given character.
 **Arguments:** OPTION[mario/luigi/toggle]
 
 ## resetcoins
-Resets the coins position on the next loading zone.
+Resets the coins position on the next loading zone.  Any of the additional options below will make spawned shines not despawn, thus not reactivating the shine spawn animation when reentering the room.
 
 **Aliases:** restartcoins
+
+**Arguments:** OPTION[preserveshinestate/preservestate/preserve/pres]
 
 ## timersplit
 Triggers a timer split.  Can be used to split on certain actions.   
@@ -197,7 +209,13 @@ Adds a variable watch.
 
 ## hotkey
 Add a hotkey for a given command.  Multiple commands can be added to the same hotkey and will be run in the order they were input unless otherwise specified in the command with the syntax ", [low/high/NUMBER] [WARNING: some commands will be overridden by others if they are inputted in the wrong order].  This can be done by either running hotkey multiple times on the same key or by separating the commands you with semicolons (no semicolon at the very end).  
+
 Syntax: /hotkey [key] [command], *[priority]; [command], *[priority]; ... [command], *[priority]
+
+Examples: 
+- /hotkey r timerreset
+- /hotkey w 8-10; timerreset; scf t
+- /hotkey w 1-4; silvers 5; resetcoins, 0
 
 **Aliases:** htk, hk
 
@@ -282,7 +300,7 @@ Sets the saved nozzles in a specific world.
 **Arguments:** OPTION[bob/sl/hmc/bm/lll/ttm/rr/bt3/ssl/wdw/ttc/all], OPTION[h/r/t/all], wTOGGLE
 
 ## warp
-Warps the player to the specified room.  If no arguments are given, the warp command will default to the position set by the warpposition command
+Warps the player to the specified room.  If no arguments are given, the warp command will default to the room and position set by the warpposition command
 
 **Aliases:** w
 
@@ -333,7 +351,9 @@ Returns the current commands binded on the given hotkey
 
 ## individuallevel
 Sets up an individual level speedrun with the given parameters from the user.  Default is an 100% IL and all data about the stage will be reset(except for high score).  To add fludds, use a "-" for the last argument followed by h, r, t, or a(or any combination of them).  There are shortcuts for 100%(100), all star coins(asc), and all shines(as).  
-Example: /il bob as -a (start an all shines bob il with all fludds to start)
+
+Example: 
+- /il bob as -a (start an all shines bob il with all fludds to start)
 
 **Aliases:** il
 
@@ -364,13 +384,18 @@ Resets all unlockable castle doors so the shine/key animation will play on their
 **Aliases:** resetdoor, rd
 
 ## lightningtransition
-Makes the next transition a lightningtransition(if possible). Will be delayed if after_transition is true
+Makes the next transition a lightning transition(if possible).
 
 **Aliases:** lt
-
-**Arguments:** *BOOL:after_transition
 
 ## warpposition
 Sets a default warp position for the warp command to your current position
 
 **Aliases:** warpposition, warppos, wp
+
+## delay
+Runs a command after a user-given number of miliseconds
+
+**Syntax:** /delay [miliseconds] [command]
+
+**Arguments:** NUMBER, STRING
