@@ -399,3 +399,11 @@ Runs a command after a user-given number of miliseconds
 **Syntax:** /delay [miliseconds] [command]
 
 **Arguments:** NUMBER, STRING
+
+## showinputdisplay
+
+Shows or hides the input display.
+
+**Aliases:** inputdisplay, showinputs, sid
+
+**Arguments:** wTOGGLE
