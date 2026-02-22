@@ -7,7 +7,7 @@
 ## Getting Started
 * **Opening the Console:** Press the `/` key to open the command line interface.
 * **Executing Commands:** Type your desired command and press `Enter` to execute.
-* **Terminal History:** Use the `Up` and `Down` arrow keys to navigate through your command history.
+* **Command History:** Use the `Up` and `Down` arrow keys to navigate through your command history.
 * **Closing the Console:** Press the `Escape` key to close the terminal.
 * **Star Menu:** Toggle the state of Shines and Starcoins directly through the Star Menu, utilizing the toggle system from the 2012 vanilla release.
 * **Input Display:** A built-in input display is included to show real-time keyboard inputs.
