@@ -23,7 +23,7 @@ Timing ends depending on the active category.
 ## Hotkeys
 * , - Reset timer
 * . - Stop timer
-* ,+Enter - Reset timer, clear current file data, and return to title screen
+* ,+Enter - Reset timer, clear current file data and level designer clones, and return to title screen
 * Shift+Tab - Change timer format
 * Control+Tab - Change category
 
