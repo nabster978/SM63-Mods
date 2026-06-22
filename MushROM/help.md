@@ -407,3 +407,9 @@ Shows or hides the input display.
 **Aliases:** inputdisplay, showinputs, sid
 
 **Arguments:** wTOGGLE
+
+## removeldp
+
+Removes an unused level designer instance
+
+**Aliases:** rldp
