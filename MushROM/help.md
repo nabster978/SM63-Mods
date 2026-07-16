@@ -214,8 +214,8 @@ Syntax: /hotkey [key] [command], *[priority]; [command], *[priority]; ... [comma
 
 Examples: 
 - /hotkey r timerreset
-- /hotkey w 8-10; timerreset; scf t
-- /hotkey w 1-4; silvers 5; resetcoins, 0
+- /hotkey r w 8-10; timerreset; scf t
+- /hotkey r w 1-4; silvers 5; resetcoins, 0
 
 **Aliases:** htk, hk
 
