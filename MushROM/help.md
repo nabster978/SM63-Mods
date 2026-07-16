@@ -208,7 +208,7 @@ Adds a variable watch.
 **Arguments:** STRING
 
 ## hotkey
-Add a hotkey for a given command.  Multiple commands can be added to the same hotkey and will be run in the order they were input unless otherwise specified in the command with the syntax ", [low/high/NUMBER] [WARNING: some commands will be overridden by others if they are inputted in the wrong order].  This can be done by either running hotkey multiple times on the same key or by separating the commands you with semicolons (no semicolon at the very end).  
+Add a hotkey for a given command.  Multiple commands can be added to the same hotkey and will be run in the order they were input unless otherwise specified in the command with the syntax ", [low/high/NUMBER] [WARNING: some commands will be overridden by others if they are inputted in the wrong order].  This can be done by either running hotkey multiple times on the same key or by separating the commands you with semicolons or dots(none at the very end).  
 
 Syntax: /hotkey [key] [command], *[priority]; [command], *[priority]; ... [command], *[priority]
 
