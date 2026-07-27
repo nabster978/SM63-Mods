@@ -391,7 +391,7 @@ Makes the next transition a lightning transition(if possible).
 ## warpposition
 Sets a default warp position for the warp command to your current position
 
-**Aliases:** warpposition, warppos, wp
+**Aliases:** warppos, wp
 
 ## delay
 Runs a command after a user-given number of miliseconds
