@@ -27,7 +27,7 @@ Quits to the title screen.
 ## timerreset
 Resets the timer and pauses until next transition
 
-**Aliases:** timereset, treset, timerrestart, timerestart, trestart
+**Aliases:** timereset, treset, timerrestart, timerestart, trestart, timer reset
 
 ## health
 Sets a certain amount of health to the player. From 0 to 8.
@@ -49,8 +49,8 @@ Remove a command from a hotkey based on index (starting at 0) or the command
 **Syntax:** removehotkey [key] [index/command]
 
 Examples:
-- /removecommand r 2
-- /removecommand f warp 8-10
+- `/removecommand r 2`
+- `/removecommand f warp 8-10`
 
 **Aliases:** clearcommand, rc, cc
 
@@ -213,9 +213,9 @@ Add a hotkey for a given command.  Multiple commands can be added to the same ho
 Syntax: /hotkey [key] [command], *[priority]; [command], *[priority]; ... [command], *[priority]
 
 Examples: 
-- /hotkey r timerreset
-- /hotkey r w 8-10; timerreset; scf t
-- /hotkey r w 1-4; silvers 5; resetcoins, 0
+- `/hotkey r timerreset`
+- `/hotkey r w 8-10; timerreset; scf t`
+- `/hotkey r w 1-4. silvers 5. resetcoins, 0`
 
 **Aliases:** htk, hk
 
@@ -353,7 +353,7 @@ Returns the current commands binded on the given hotkey
 Sets up an individual level speedrun with the given parameters from the user.  Default is an 100% IL and all data about the stage will be reset(except for high score).  To add fludds, use a "-" for the last argument followed by h, r, t, or a(or any combination of them).  There are shortcuts for 100%(100), all star coins(asc), and all shines(as).  
 
 Example: 
-- /il bob as -a (start an all shines bob il with all fludds to start)
+- `/il bob as -a` (start an all shines bob il with all fludds to start)
 
 **Aliases:** il
 
@@ -396,7 +396,7 @@ Sets a default warp position for the warp command to your current position
 ## delay
 Runs a command after a user-given number of miliseconds
 
-**Syntax:** /delay [miliseconds] [command]
+**Syntax:** `/delay [miliseconds] [command]`
 
 **Arguments:** NUMBER, STRING
 
@@ -413,3 +413,19 @@ Shows or hides the input display.
 Removes an unused level designer instance
 
 **Aliases:** rldp
+
+## savestate
+
+Saves Mario's current state to a save slot [0,9] that can be reloaded with `restorestate`
+
+**Aliases:** ss
+
+**Arguments:** NUMBER
+
+## restorestate
+
+Restores Mario's saved state from a save slot [0,9]
+
+**Aliases:** loadstate, rs, ls
+
+**Arguments:** NUMBER
